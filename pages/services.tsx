@@ -151,9 +151,9 @@ export default function Services() {
                     <div className="text-xs text-voltarian-green mt-1">+$1.25 per 1GB RAM/3.2GB Storage</div>
                   </div>
                   <div className="voltarian-card text-center">
-                    <div className="text-3xl font-bold gradient-text mb-2">$8.50</div>
+                    <div className="text-3xl font-bold gradient-text mb-2">$14.50</div>
                     <div className="text-gray-400 mb-2">Website Premium</div>
-                    <div className="text-sm text-gray-300">8GB RAM • 96GB Storage</div>
+                    <div className="text-sm text-gray-300">12GB RAM • 108.8GB Storage</div>
                     <div className="text-xs text-voltarian-green mt-1">+$1.25 per 1GB RAM/3.2GB Storage</div>
                   </div>
                   <div className="voltarian-card text-center">
@@ -408,7 +408,7 @@ export default function Services() {
                     <div className="voltarian-card text-center">
                       <div className="text-2xl font-bold gradient-text mb-2">2GB+</div>
                       <div className="text-gray-400 mb-2">RAM</div>
-                      <div className="text-sm text-gray-300">minimum requirement</div>
+                      <div className="text-sm text-gray-300">starting plans</div>
                     </div>
                   </div>
                 </div>
@@ -468,7 +468,7 @@ export default function Services() {
                     <div className="voltarian-card text-center">
                       <div className="text-2xl font-bold gradient-text mb-2">4GB+</div>
                       <div className="text-gray-400 mb-2">RAM</div>
-                      <div className="text-sm text-gray-300">minimum requirement</div>
+                      <div className="text-sm text-gray-300">starting plans</div>
                     </div>
                   </div>
                 </div>
