@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Voltarian Technologies - Affordable Web & Discord Bot Hosting</title>
+        <title>Voltarian Technologies - Home</title>
         <meta name="description" content="Voltarian Technologies offers affordable website hosting and Discord bot hosting services with 99.9% uptime, DDoS protection, and 24/7 support." />
       </Head>
 
@@ -34,7 +34,7 @@ export default function Home() {
             <div className="flex items-center justify-between">
               <div className="flex items-center space-x-2">
                 <div className="w-10 h-10 bg-voltarian-green rounded-lg flex items-center justify-center">
-                  <Zap className="w-6 h-6 text-voltarian-dark" />
+                  <img src="/logo.svg" alt="VoltaTECH Logo" className="w-6 h-6" />
                 </div>
                 <span className="text-xl font-bold font-logo">VoltaTECH</span>
               </div>
@@ -427,7 +427,7 @@ export default function Home() {
               <div>
                 <div className="flex items-center space-x-2 mb-4">
                   <div className="w-8 h-8 bg-voltarian-green rounded-lg flex items-center justify-center">
-                    <Zap className="w-5 h-5 text-voltarian-dark" />
+                    <img src="/logo.svg" alt="VoltaTECH Logo" className="w-5 h-5" />
                   </div>
                   <span className="text-lg font-bold font-logo">VoltaTECH</span>
                 </div>

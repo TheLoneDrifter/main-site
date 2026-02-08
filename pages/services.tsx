@@ -1,14 +1,14 @@
 import React from 'react';
 import Head from 'next/head';
 import { motion } from 'framer-motion';
-import { Zap, Globe, Bot, CheckCircle, ArrowRight, Gamepad2, Sword } from 'lucide-react';
+import { Zap, Globe, Bot, CheckCircle, ArrowRight, Gamepad2, Sword, Sparkles } from 'lucide-react';
 import Link from 'next/link';
 
 export default function Services() {
   return (
     <>
       <Head>
-        <title>VoltaTECH Services - Affordable Hosting Solutions</title>
+        <title>Voltarian Technologies - Services</title>
         <meta name="description" content="Explore VoltaTECH's affordable hosting services including website hosting, Discord bot hosting, VPS, and dedicated servers with 99.9% uptime." />
       </Head>
 
@@ -19,7 +19,7 @@ export default function Services() {
             <div className="flex items-center justify-between">
               <div className="flex items-center space-x-2">
                 <div className="w-10 h-10 bg-voltarian-green rounded-lg flex items-center justify-center">
-                  <Zap className="w-6 h-6 text-voltarian-dark" />
+                  <img src="/logo.svg" alt="VoltaTECH Logo" className="w-6 h-6" />
                 </div>
                 <span className="text-xl font-bold font-logo">VoltaTECH</span>
               </div>
@@ -282,7 +282,7 @@ export default function Services() {
               </p>
             </motion.div>
 
-            <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {/* Minecraft Server Hosting */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -373,9 +373,9 @@ export default function Services() {
                       <div className="text-sm text-gray-300">TBA</div>
                     </div>
                     <div className="voltarian-card text-center">
-                      <div className="text-2xl font-bold gradient-text mb-2">512MB+</div>
+                      <div className="text-2xl font-bold gradient-text mb-2">2GB+</div>
                       <div className="text-gray-400 mb-2">RAM</div>
-                      <div className="text-sm text-gray-300">starting plans</div>
+                      <div className="text-sm text-gray-300">minimum requirement</div>
                     </div>
                   </div>
                 </div>
@@ -402,6 +402,66 @@ export default function Services() {
                   Notify Me When Available
                 </button>
               </motion.div>
+
+              {/* Hytale Server Hosting */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="voltarian-card relative overflow-hidden"
+              >
+                <div className="absolute top-4 right-4">
+                  <span className="bg-yellow-500 text-black px-3 py-1 rounded-full text-sm font-semibold">
+                    COMING SOON
+                  </span>
+                </div>
+                <div className="text-center mb-6">
+                  <div className="w-16 h-16 bg-voltarian-green rounded-lg flex items-center justify-center mb-4 mx-auto">
+                    <Sparkles className="w-8 h-8 text-voltarian-dark" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-2">Hytale Server Hosting</h3>
+                  <p className="text-gray-400">
+                    Next-gen sandbox game servers with optimized performance
+                  </p>
+                </div>
+                
+                <div className="space-y-4 mb-6">
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="voltarian-card text-center">
+                      <div className="text-2xl font-bold gradient-text mb-2">?</div>
+                      <div className="text-gray-400 mb-2">Starting from</div>
+                      <div className="text-sm text-gray-300">TBA</div>
+                    </div>
+                    <div className="voltarian-card text-center">
+                      <div className="text-2xl font-bold gradient-text mb-2">4GB+</div>
+                      <div className="text-gray-400 mb-2">RAM</div>
+                      <div className="text-sm text-gray-300">minimum requirement</div>
+                    </div>
+                  </div>
+                </div>
+                
+                <ul className="space-y-2 mb-6">
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-voltarian-green mr-2" />
+                    Pterodactyl Panel Control
+                  </li>
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-voltarian-green mr-2" />
+                    World Backup System
+                  </li>
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-voltarian-green mr-2" />
+                    Mod Support Ready
+                  </li>
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-voltarian-green mr-2" />
+                    Free Subdomain
+                  </li>
+                </ul>
+                <button className="w-full border border-voltarian-green text-voltarian-green py-3 rounded-lg hover:bg-voltarian-green hover:text-voltarian-dark transition-all duration-300" disabled>
+                  Notify Me When Available
+                </button>
+              </motion.div>
             </div>
           </div>
         </section>
@@ -413,7 +473,7 @@ export default function Services() {
               <div>
                 <div className="flex items-center space-x-2 mb-4">
                   <div className="w-8 h-8 bg-voltarian-green rounded-lg flex items-center justify-center">
-                    <Zap className="w-5 h-5 text-voltarian-dark" />
+                    <img src="/logo.svg" alt="VoltaTECH Logo" className="w-5 h-5" />
                   </div>
                   <span className="text-lg font-bold font-logo">VoltaTECH</span>
                 </div>

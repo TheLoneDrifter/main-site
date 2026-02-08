@@ -22,7 +22,7 @@ const Custom404: React.FC = () => {
               className="mb-8"
             >
               <div className="text-9xl font-bold gradient-text mb-4">404</div>
-              <div className="text-2xl text-gray-400 mb-2">Page Not Found</div>
+              <title>Voltarian Technologies - 404</title>
             </motion.div>
 
             {/* Error Message */}
@@ -106,7 +106,7 @@ const Custom404: React.FC = () => {
             >
               <div className="flex items-center justify-center space-x-2 mb-4">
                 <div className="w-8 h-8 bg-voltarian-green rounded-lg flex items-center justify-center">
-                  <Zap className="w-5 h-5 text-voltarian-dark" />
+                  <img src="/logo.svg" alt="VoltaTECH Logo" className="w-5 h-5" />
                 </div>
                 <span className="text-lg font-bold font-logo">VoltaTECH</span>
               </div>
