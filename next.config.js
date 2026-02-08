@@ -5,6 +5,19 @@ const nextConfig = {
   },
   images: {
     domains: ['localhost', 'voltaccept.com'],
+  },
+  async headers() {
+    return [
+      {
+        source: '/fonts/(.*)',
+        headers: [
+          {
+            key: 'Access-Control-Allow-Origin',
+            value: 'voltaccept.com'
+          }
+        ]
+      }
+    ];
   }
 }
 

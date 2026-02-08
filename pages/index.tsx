@@ -1,25 +1,11 @@
-import React from 'react'
-import Head from 'next/head'
-import { motion } from 'framer-motion'
-import { 
-  Server, 
-  Bot, 
-  Zap, 
-  Shield, 
-  Globe, 
-  Cpu, 
-  Clock, 
-  CheckCircle, 
-  Star,
-  Users,
-  TrendingUp,
-  Lock,
-  Database,
-  Rocket,
-  ArrowRight
-} from 'lucide-react'
+import React, { useState } from 'react';
+import Head from 'next/head';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Zap, Shield, Database, Globe, Bot, Lock, ArrowRight, CheckCircle, Menu, X, Clock, Users, TrendingUp } from 'lucide-react'
 
 export default function Home() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <>
       <Head>
@@ -38,6 +24,8 @@ export default function Home() {
                 </div>
                 <span className="text-xl font-bold font-logo">VoltaTECH</span>
               </div>
+              
+              {/* Desktop Navigation */}
               <div className="hidden md:flex items-center space-x-8">
                 <a href="/" className="text-voltarian-green transition-colors">Home</a>
                 <a href="/services" className="hover:text-voltarian-green transition-colors">Services</a>
@@ -45,7 +33,36 @@ export default function Home() {
                 <a href="/contact" className="hover:text-voltarian-green transition-colors">Contact</a>
                 <button className="voltarian-button">Get Started</button>
               </div>
+
+              {/* Mobile Menu Button */}
+              <button 
+                className="md:hidden text-white hover:text-voltarian-green transition-colors"
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+              >
+                {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              </button>
             </div>
+
+            {/* Mobile Menu */}
+            <AnimatePresence>
+              {isMenuOpen && (
+                <motion.div
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: 'auto' }}
+                  exit={{ opacity: 0, height: 0 }}
+                  transition={{ duration: 0.3 }}
+                  className="md:hidden border-t border-white/10 mt-4 pt-4"
+                >
+                  <div className="flex flex-col space-y-4">
+                    <a href="/" className="text-voltarian-green transition-colors">Home</a>
+                    <a href="/services" className="hover:text-voltarian-green transition-colors">Services</a>
+                    <a href="/about" className="hover:text-voltarian-green transition-colors">About</a>
+                    <a href="/contact" className="hover:text-voltarian-green transition-colors">Contact</a>
+                    <button className="voltarian-button w-full">Get Started</button>
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
           </div>
         </nav>
 

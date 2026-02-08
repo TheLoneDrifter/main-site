@@ -1,9 +1,11 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { ArrowLeft, Home, Zap, Mail, Users, MessageSquare } from 'lucide-react';
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { ArrowLeft, Home, Zap, Mail, Users, MessageSquare, Menu, X } from 'lucide-react';
 import Link from 'next/link';
 
 const Custom404: React.FC = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <>
       <div className="min-h-screen bg-voltarian-dark text-white flex items-center justify-center">
